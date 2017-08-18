@@ -1,0 +1,4 @@
+name: faq
+states:
+    answer:
+        component: meya.cms_text

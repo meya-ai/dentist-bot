@@ -1,0 +1,29 @@
+name: register
+states:
+    name:
+        component: meya.input_string
+        properties:
+            text: "What's your name?"
+            output: name
+            scope: user
+    email:
+        component: meya.input_string
+        properties:
+            text: "What's your email?"
+            output: email
+            scope: user
+    phone:
+        component: meya.input_string
+        properties:
+            text: "What's your phone number?"
+            output: phone
+            scope: user
+    register:
+        component: register_email
+    next:
+        component: meya.set
+        properties:
+            key: auth
+            value: "1"
+            scope: user
+        return: true

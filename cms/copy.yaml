@@ -1,0 +1,44 @@
+-   io: output
+    key: dontunderstand
+    language: en
+    tag: ''
+    type: string
+    value: I'm sorry, I don't understand. Say something like "Do you accept insurance?"
+        or "Book an appointment."
+-   io: output
+    key: hello
+    language: en
+    tag: ''
+    type: string
+    value: Hi there! How can I help?
+-   io: output
+    key: hello
+    language: en
+    tag: ''
+    type: string
+    value: "Howdy \U0001F609 What can I do for you?"
+-   io: output
+    key: hello
+    language: en
+    tag: ''
+    type: string
+    value: "Hello \U0001F600 How can I help?"
+-   io: output
+    key: hello
+    language: en
+    tag: ''
+    type: string
+    value: Hey! What can I do for you?
+-   io: output
+    key: hello
+    language: en
+    tag: ''
+    type: string
+    value: Hey there! How can I make your day better?
+-   io: output
+    key: help
+    language: en
+    tag: ''
+    type: string
+    value: Happy to help. I'm a bot working for Allure Dental Center. Say something
+        like "Do you accept insurance?" or "Book an appointment."

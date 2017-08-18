@@ -1,0 +1,111 @@
+-   io: input
+    key: financing
+    language: en
+    tag: ''
+    type: string
+    value: What are my financing options?
+-   io: input
+    key: financing
+    language: en
+    tag: ''
+    type: string
+    value: How can I pay?
+-   io: input
+    key: financing
+    language: en
+    tag: ''
+    type: string
+    value: Do you take credit?
+-   io: input
+    key: financing
+    language: en
+    tag: ''
+    type: string
+    value: What financing do you provide?
+-   io: input
+    key: financing
+    language: en
+    tag: ''
+    type: string
+    value: Do you provide financing?
+-   io: input
+    key: financing
+    language: en
+    tag: ''
+    type: string
+    value: Do you support LendingClub?
+-   io: input
+    key: financing
+    language: en
+    tag: ''
+    type: string
+    value: Do you support Lending Club?
+-   io: input
+    key: financing
+    language: en
+    tag: ''
+    type: string
+    value: Do you support CareCredit?
+-   io: output
+    key: financing
+    language: en
+    tag: ''
+    type: string
+    value: 'For dental treatment that isn’t covered by insurance, we offer two different
+        financing options: CareCredit Financing and Lending Club.'
+-   io: input
+    key: insurance
+    language: en
+    tag: ''
+    type: string
+    value: What insurance do you accept?
+-   io: input
+    key: insurance
+    language: en
+    tag: ''
+    type: string
+    value: Do you accept insurance?
+-   io: input
+    key: insurance
+    language: en
+    tag: ''
+    type: string
+    value: Do you accept Delta insurance?
+-   io: input
+    key: insurance
+    language: en
+    tag: ''
+    type: string
+    value: What are the insurance options?
+-   io: input
+    key: insurance
+    language: en
+    tag: ''
+    type: string
+    value: Is my insurance covered?
+-   io: input
+    key: insurance
+    language: en
+    tag: ''
+    type: string
+    value: What insurance providers do you work with?
+-   io: input
+    key: insurance
+    language: en
+    tag: ''
+    type: string
+    value: do you take Delta?
+-   io: input
+    key: insurance
+    language: en
+    tag: ''
+    type: string
+    value: Do you take MetLife?
+-   io: output
+    key: insurance
+    language: en
+    tag: ''
+    type: string
+    value: We accept all PPO dental insurance policies. We frequently work with Delta
+        Dental, MetLife, United Concordia, Cigna, Guardian, Aetna, Assurant and UnitedHealthcare
+        and more! We are happy to discuss particular plans with you.

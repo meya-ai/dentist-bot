@@ -1,0 +1,100 @@
+name: book_appointment
+states:
+    welcome:
+        component: meya.text
+        properties:
+            text: "{{ cms.book.welcome }}"
+        delay:
+            relative: 1
+    check_auth:
+        component: meya.conditional_equal
+        properties:
+            value1: "{{ user.auth }}"
+            value2: "1"
+        transitions:
+            equal: check_service
+            notequal: new_existing
+    new_existing:
+        component: meya.text_buttons
+        properties:
+            text: "{{ cms.book.new_existing }}"
+            output: customer
+            buttons:
+                - text: "New"
+                  action: new
+                - text: "Existing"
+                  action: existing
+        transitions:
+            new: register
+            existing: signin
+    register:
+        flow: register
+        transitions:
+            next: check_service
+    signin:
+        flow: signin
+        transitions:
+            success: check_service
+            fail: register
+    check_service:
+        component: check_service
+        transitions:
+            notexists: service
+            exists: confirm_service
+    confirm_service:
+        component: meya.text
+        properties:
+            text: "Let's find a time for a {{ flow.service }} appointment"
+        delay:
+            relative: 1
+        transitions:
+            next: check_date
+    service:
+        component: meya.text_buttons
+        properties:
+            text: "{{ cms.book.service }}"
+            output: service
+            buttons:
+                - text: "checkup"
+                  action: next
+                - text: "cosmetic"
+                  action: next
+                - text: "other"
+                  action: other
+        transitions:
+            next: check_date
+            other: other_service
+    other_service:
+        component: meya.input_string
+        properties:
+            text: "{{ cms.book.other_service }}"
+            output: service
+            scope: flow
+    check_date:
+        component: check_date
+        transitions:
+            notexists: date
+            exists: confirm_date
+    confirm_date:
+        component: meya.text
+        properties:
+            text: "I'll see what we have available around {{ flow.date_str }}"
+        delay:
+            relative: 1
+        transitions:
+            next: time
+    date:
+        component: meya.input_datetime
+        properties:
+            text: "{{ cms.book.date }}"
+            output: date
+            scope: flow
+            require_match: true
+    time:
+        component: find_time
+        transitions:
+            success: confirm
+            fail: date
+    confirm:
+        component: confirm_appointment
+        return: true

@@ -1,0 +1,30 @@
+-   io: output
+    key: date
+    language: en
+    tag: ''
+    type: string
+    value: Which day works best for you?
+-   io: output
+    key: new_existing
+    language: en
+    tag: ''
+    type: string
+    value: Are you a new or existing customer?
+-   io: output
+    key: other_service
+    language: en
+    tag: ''
+    type: string
+    value: What service do you require? (restorative, braces, etc)
+-   io: output
+    key: service
+    language: en
+    tag: ''
+    type: string
+    value: For which dental service?
+-   io: output
+    key: welcome
+    language: en
+    tag: ''
+    type: string
+    value: I can definitely help with that.

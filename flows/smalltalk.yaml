@@ -1,0 +1,20 @@
+name: smalltalk
+intents:
+    smalltalk.greetings.hello: hello
+    smalltalk.agent.can_you_help: help
+states:
+    default:
+        component: meya.text
+        properties:
+            text: "{{ flow.fulfillment.speech }}"
+        return: true
+    hello:
+        component: meya.text
+        properties:
+            text: "{{ cms.copy.hello }}"
+        return: true
+    help:
+        component: meya.text
+        properties:
+            text: "{{ cms.copy.help }}"
+        return: true

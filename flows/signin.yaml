@@ -1,0 +1,31 @@
+name: signin
+states:
+    email:
+        component: meya.input_string
+        properties:
+            text: "What is your email?"
+            output: email
+            scope: flow
+    check_email:
+        component: check_email
+        transitions:
+            success: confirm
+            fail: fail
+    fail:
+        component: meya.text
+        properties:
+            text: "Sorry, we don't have you on file."
+        return: true
+    confirm:
+        component: meya.text
+        properties:
+            text: "Thanks and welcome back."
+    auth:
+        component: meya.set
+        properties:
+            key: auth
+            value: "1"
+            scope: user
+    success:
+        component: meya.pass
+        return: true
