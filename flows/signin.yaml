@@ -1,3 +1,8 @@
+triggers:
+  - type: meya.keyword
+    properties:
+        ignorecase: true
+        keyword: _signin
 name: signin
 states:
     email:
