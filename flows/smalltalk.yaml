@@ -1,3 +1,9 @@
+triggers:
+  - type: meya.api_ai
+    properties:
+        intent_regex: ^(smalltalk\..+)|(hello)$
+        language: en
+        client_access_token: 3293132b7bf14c989a7cc8f81734a7d0
 name: smalltalk
 intents:
     smalltalk.greetings.hello: hello
