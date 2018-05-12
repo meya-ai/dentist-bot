@@ -3,6 +3,10 @@ triggers:
     properties:
         detect_language: true
         space: faq
+  - type: meya.cms_nlu
+    properties:
+        detect_language: true
+        space: faq
 name: faq
 states:
     answer:

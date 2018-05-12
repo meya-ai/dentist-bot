@@ -3,6 +3,10 @@ triggers:
     properties:
         ignorecase: true
         keyword: _register
+  - type: meya.keyword
+    properties:
+        ignorecase: true
+        keyword: _register
 name: register
 states:
     name:

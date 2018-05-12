@@ -3,6 +3,10 @@ triggers:
     properties:
         ignorecase: true
         keyword: _signin
+  - type: meya.keyword
+    properties:
+        ignorecase: true
+        keyword: _signin
 name: signin
 states:
     email:

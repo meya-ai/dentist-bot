@@ -1,5 +1,6 @@
 triggers:
   - type: meya.catchall
+  - type: meya.catchall
 name: dontunderstand
 states:
     first:
