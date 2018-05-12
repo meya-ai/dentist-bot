@@ -14,7 +14,7 @@ states:
     fail:
         component: meya.text
         properties:
-            text: "Sorry, we don't have you on file. 🤔"
+            text: "Sorry, we don't have you on file. 🤔🤔"
         return: true
     confirm:
         component: meya.text
