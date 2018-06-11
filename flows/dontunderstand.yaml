@@ -1,4 +1,5 @@
-name: dontunderstand
+triggers:
+  - type: meya.catchall
 states:
     first:
         component: meya.text

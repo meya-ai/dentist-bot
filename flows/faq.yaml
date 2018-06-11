@@ -1,4 +1,7 @@
-name: faq
+triggers:
+  - type: meya.cms_nlu
+    properties:
+        space: faq
 states:
     answer:
         component: meya.cms_text

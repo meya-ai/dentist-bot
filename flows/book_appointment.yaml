@@ -1,4 +1,9 @@
-name: book_appointment
+triggers:
+  - type: meya.api_ai
+    properties:
+        client_access_token: 3293132b7bf14c989a7cc8f81734a7d0
+        intent: book_appointment
+        language: en
 states:
     welcome:
         component: meya.text

@@ -1,0 +1,6 @@
+
+env/
+__pycache__/
+*.py[cod]
+meya-config.yaml
+.vscode/
