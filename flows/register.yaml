@@ -1,4 +1,8 @@
-name: register
+triggers:
+  - type: meya.keyword
+    properties:
+        ignorecase: true
+        keyword: _register
 states:
     name:
         component: meya.input_string

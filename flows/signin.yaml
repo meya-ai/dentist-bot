@@ -1,4 +1,8 @@
-name: signin
+triggers:
+  - type: meya.keyword
+    properties:
+        ignorecase: true
+        keyword: _signin
 states:
     email:
         component: meya.input_string
